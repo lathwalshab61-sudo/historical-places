@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Historical Places in Punjab | Journey Through Punjab's Glorious History</title>
+    <meta name="description"
+        content="Discover the rich heritage and historical places of Punjab, India. Explore forts, gurudwaras, museums, and cultural landmarks across the Land of Five Rivers." />
+    <meta name="keywords"
+        content="Punjab historical places, Golden Temple, Jallianwala Bagh, Punjab heritage, forts, gurudwaras, museums" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <span class="lotus-icon">🪷</span>
+                <div>
+                    <h1 class="sidebar-title">HISTORICAL PLACES</h1>
+                    <span class="sidebar-subtitle">IN PUNJAB</span>
+                </div>
+            </div>
+            <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Close sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="sidebar-section">
+            <h3 class="sidebar-section-title">TOP CITIES</h3>
+            <ul class="sidebar-list" id="topCitiesList">
+                <li><a href="#" class="sidebar-link active" data-city="amritsar"><i class="fas fa-map-marker-alt"></i>
+                        Amritsar</a></li>
+                <li><a href="#" class="sidebar-link" data-city="patiala"><i class="fas fa-map-marker-alt"></i>
+                        Patiala</a></li>
+                <li><a href="#" class="sidebar-link" data-city="anandpur-sahib"><i class="fas fa-map-marker-alt"></i>
+                        Anandpur Sahib</a></li>
+                <li><a href="#" class="sidebar-link" data-city="kapurthala"><i class="fas fa-map-marker-alt"></i>
+                        Kapurthala</a></li>
+                <li><a href="#" class="sidebar-link" data-city="ludhiana"><i class="fas fa-map-marker-alt"></i>
+                        Ludhiana</a></li>
+                <li><a href="#" class="sidebar-link" data-city="jalandhar"><i class="fas fa-map-marker-alt"></i>
+                        Jalandhar</a></li>
+                <li><a href="#" class="sidebar-link" data-city="bathinda"><i class="fas fa-map-marker-alt"></i>
+                        Bathinda</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h3 class="sidebar-section-title">UPCOMING FESTIVALS</h3>
+            <ul class="sidebar-list" id="festivalsList">
+                <li><a href="#festivals" class="sidebar-link"><i class="fas fa-calendar-star"></i> Baisakhi –
+                        Amritsar</a></li>
+                <li><a href="#festivals" class="sidebar-link"><i class="fas fa-calendar-star"></i> Hola Mohalla –
+                        Patiala</a></li>
+                <li><a href="#festivals" class="sidebar-link"><i class="fas fa-calendar-star"></i> Gurpurab – Anandpur
+                        Sahib</a></li>
+                <li><a href="#festivals" class="sidebar-link"><i class="fas fa-calendar-star"></i> Rose Festival –
+                        Kapurthala</a></li>
+                <li><a href="#festivals" class="sidebar-link"><i class="fas fa-calendar-star"></i> Kila Raipur Games –
+                        Ludhiana</a></li>
+                <li><a href="#festivals" class="sidebar-link"><i class="fas fa-calendar-star"></i> Dussehra Mela –
+                        Jalandhar</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-map">
+            <h3 class="sidebar-section-title">PUNJAB MAP</h3>
+            <div class="map-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Punjab_India_locator_map.svg/300px-Punjab_India_locator_map.svg.png"
+                    alt="Punjab Map" class="punjab-map"
+                    onerror="this.src='https://via.placeholder.com/160x160/c8a951/fff?text=Punjab+Map'" />
+            </div>
+        </div>
+
+        <div class="sidebar-footer-logo">
+            <span class="lotus-icon-sm">🪷</span>
+            <span>HISTORICAL PLACES<br><strong>IN PUNJAB</strong></span>
+        </div>
+    </aside>
+
+    <!-- SIDEBAR OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content" id="mainContent">
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=1400&q=90"
+                    alt="Golden Temple Amritsar" class="hero-img" id="heroImg" onerror="this.style.display='none'" />
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-pre-title">WELCOME TO PUNJAB HERITAGE</p>
+                <h2 class="hero-title">'EXPLORE THE LAND<br>OF FIVE RIVERS'</h2>
+                <p class="hero-subtitle">JOURNEY THROUGH PUNJAB'S GLORIOUS HISTORY</p>
+                <div class="hero-buttons">
+                    <a href="#featured" class="btn btn-primary">Explore Now</a>
+                    <a href="#plan" class="btn btn-outline">Plan Your Visit</a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar" id="navbar">
+            <button class="sidebar-toggle-btn" id="sidebarToggleBtn" aria-label="Toggle sidebar">
+                <i class="fas fa-grip-lines"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-section="home">HOME</a></li>
+                <li><a href="#forts" class="nav-link" data-section="forts">FORTS</a></li>
+                <li><a href="#gurudwaras" class="nav-link" data-section="gurudwaras">GURUDWARAS</a></li>
+                <li><a href="#museums" class="nav-link" data-section="museums">MUSEUMS</a></li>
+                <li><a href="#sites" class="nav-link" data-section="sites">OTHER SITES</a></li>
+                <li><a href="#plan" class="nav-link" data-section="plan">PLAN YOUR TRIP</a></li>
+                <li><a href="#blog" class="nav-link" data-section="blog">BLOG</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search for a place..."
+                    aria-label="Search for a historical place" />
+                <button class="search-btn" id="searchBtn" aria-label="Submit search"><i
+                        class="fas fa-search"></i></button>
+                <div class="search-dropdown" id="searchDropdown"></div>
+            </div>
+            <div class="mobile-nav-toggle" id="mobileNavToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- MOBILE NAV MENU -->
+        <div class="mobile-nav-menu" id="mobileNavMenu">
+            <a href="#home" class="mobile-nav-link">HOME</a>
+            <a href="#forts" class="mobile-nav-link">FORTS</a>
+            <a href="#gurudwaras" class="mobile-nav-link">GURUDWARAS</a>
+            <a href="#museums" class="mobile-nav-link">MUSEUMS</a>
+            <a href="#sites" class="mobile-nav-link">OTHER SITES</a>
+            <a href="#plan" class="mobile-nav-link">PLAN YOUR TRIP</a>
+            <a href="#blog" class="mobile-nav-link">BLOG</a>
+        </div>
+
+        <!-- FEATURED DESTINATIONS -->
+        <section class="section featured" id="featured">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Must Visit</span>
+                    <h2 class="section-title">FEATURED DESTINATIONS</h2>
+                    <p class="section-desc">Discover Punjab's most iconic and breathtaking historical landmarks</p>
+                </div>
+                <div class="destinations-grid" id="featuredGrid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- FORTS SECTION -->
+        <section class="section forts-section" id="forts">
+            <div class="section-bg-pattern"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Fortresses of Power</span>
+                    <h2 class="section-title">MAJESTIC FORTS</h2>
+                    <p class="section-desc">Stand within walls that witnessed empires rise and fall</p>
+                </div>
+                <div class="places-grid" id="fortsGrid"></div>
+            </div>
+        </section>
+
+        <!-- GURUDWARAS SECTION -->
+        <section class="section gurudwaras-section" id="gurudwaras">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Spiritual Sanctuaries</span>
+                    <h2 class="section-title">SACRED GURUDWARAS</h2>
+                    <p class="section-desc">Discover the divine spiritual heritage of Sikhism</p>
+                </div>
+                <div class="places-grid" id="gurudwarasGrid"></div>
+            </div>
+        </section>
+
+        <!-- MUSEUMS SECTION -->
+        <section class="section museums-section" id="museums">
+            <div class="section-bg-pattern"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Windows to History</span>
+                    <h2 class="section-title">RENOWNED MUSEUMS</h2>
+                    <p class="section-desc">Explore centuries of history, art, and culture</p>
+                </div>
+                <div class="places-grid" id="museumsGrid"></div>
+            </div>
+        </section>
+
+        <!-- OTHER SITES SECTION -->
+        <section class="section other-sites-section" id="sites">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Hidden Gems</span>
+                    <h2 class="section-title">OTHER HISTORIC SITES</h2>
+                    <p class="section-desc">Uncover the lesser-known treasures of Punjab</p>
+                </div>
+                <div class="places-grid" id="sitesGrid"></div>
+            </div>
+        </section>
+
+        <!-- FESTIVALS SECTION -->
+        <section class="section festivals-section" id="festivals">
+            <div class="container">
+                <div class="section-header light">
+                    <span class="section-tag light">Celebration of Culture</span>
+                    <h2 class="section-title light">FESTIVALS OF PUNJAB</h2>
+                    <p class="section-desc light">Immerse yourself in the vibrant celebrations of Punjab</p>
+                </div>
+                <div class="festivals-grid" id="festivalsGrid"></div>
+            </div>
+        </section>
+
+        <!-- PLAN YOUR TRIP -->
+        <section class="section plan-section" id="plan">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Your Adventure Awaits</span>
+                    <h2 class="section-title">PLAN YOUR TRIP</h2>
+                    <p class="section-desc">Let us help you craft the perfect Punjab heritage journey</p>
+                </div>
+                <div class="plan-grid">
+                    <div class="plan-card" id="plan-card-1">
+                        <div class="plan-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>Choose Your Dates</h3>
+                        <p>October to March is the ideal time to visit Punjab for pleasant weather and vibrant
+                            festivals.</p>
+                    </div>
+                    <div class="plan-card" id="plan-card-2">
+                        <div class="plan-icon"><i class="fas fa-route"></i></div>
+                        <h3>Plan Your Route</h3>
+                        <p>Start from Amritsar, move to Anandpur Sahib, then Patiala and Kapurthala for a complete
+                            heritage tour.</p>
+                    </div>
+                    <div class="plan-card" id="plan-card-3">
+                        <div class="plan-icon"><i class="fas fa-hotel"></i></div>
+                        <h3>Book Accommodation</h3>
+                        <p>Heritage hotels and dharamshalas offer authentic stays close to major historical sites.</p>
+                    </div>
+                    <div class="plan-card" id="plan-card-4">
+                        <div class="plan-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Savor Local Cuisine</h3>
+                        <p>Enjoy langar at gurudwaras, amritsari kulcha, sarson da saag, and makki di roti.</p>
+                    </div>
+                </div>
+
+                <!-- Trip Planner Form -->
+                <div class="trip-planner-form" id="tripForm">
+                    <h3 class="form-title">Get a Personalized Itinerary</h3>
+                    <form id="plannerForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tripName">Your Name</label>
+                                <input type="text" id="tripName" class="form-input" placeholder="Enter your name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="tripEmail">Email Address</label>
+                                <input type="email" id="tripEmail" class="form-input" placeholder="your@email.com" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tripDuration">Duration</label>
+                                <select id="tripDuration" class="form-input">
+                                    <option value="">Select duration</option>
+                                    <option value="2">2 Days</option>
+                                    <option value="3">3 Days</option>
+                                    <option value="5">5 Days</option>
+                                    <option value="7">7 Days</option>
+                                    <option value="10">10+ Days</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="tripInterest">Interest</label>
+                                <select id="tripInterest" class="form-input">
+                                    <option value="">Select interest</option>
+                                    <option value="heritage">Heritage & History</option>
+                                    <option value="spiritual">Spiritual Journey</option>
+                                    <option value="culture">Culture & Festivals</option>
+                                    <option value="all">All of the above</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tripMessage">Special Requirements</label>
+                            <textarea id="tripMessage" class="form-input form-textarea"
+                                placeholder="Any special requirements or preferences..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="planFormSubmit">
+                            <i class="fas fa-paper-plane"></i> Request Itinerary
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display:none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Thank you! We'll send your personalized itinerary soon.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG SECTION -->
+        <section class="section blog-section" id="blog">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Stories & Insights</span>
+                    <h2 class="section-title">TRAVEL BLOG</h2>
+                    <p class="section-desc">Read inspiring stories about Punjab's heritage and culture</p>
+                </div>
+                <div class="blog-grid" id="blogGrid"></div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="200">0</div>
+                        <div class="stat-label">Historical Sites</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="35">0</div>
+                        <div class="stat-label">Forts & Palaces</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="120">0</div>
+                        <div class="stat-label">Gurudwaras</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500000">0</div>
+                        <div class="stat-label">Annual Visitors</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-col footer-brand">
+                            <div class="footer-logo">
+                                <span class="footer-lotus">🪷</span>
+                                <div>
+                                    <span class="footer-brand-name">HISTORICAL PLACES</span>
+                                    <span class="footer-brand-sub">IN PUNJAB</span>
+                                </div>
+                            </div>
+                            <p class="footer-about">Your premier guide to Punjab's rich historical and cultural
+                                heritage. Explore 5000 years of history across the Land of Five Rivers.</p>
+                            <div class="footer-socials">
+                                <a href="#" class="social-link" id="footer-fb" aria-label="Facebook"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link" id="footer-ig" aria-label="Instagram"><i
+                                        class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link" id="footer-li" aria-label="LinkedIn"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link" id="footer-yt" aria-label="YouTube"><i
+                                        class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h4 class="footer-col-title">Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                                <li><a href="#forts"><i class="fas fa-chevron-right"></i> Forts</a></li>
+                                <li><a href="#gurudwaras"><i class="fas fa-chevron-right"></i> Gurudwaras</a></li>
+                                <li><a href="#museums"><i class="fas fa-chevron-right"></i> Museums</a></li>
+                                <li><a href="#plan"><i class="fas fa-chevron-right"></i> Plan Your Trip</a></li>
+                                <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4 class="footer-col-title">Top Destinations</h4>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Golden Temple</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Jallianwala Bagh</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Virasat-e-Khalsa</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Qila Mubarak</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Wagah Border</a></li>
+                                <li><a href="#"><i class="fas fa-chevron-right"></i> Gobindgarh Fort</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4 class="footer-col-title">Contact Us</h4>
+                            <ul class="footer-contact">
+                                <li><i class="fas fa-map-marker-alt"></i> Heritage House, Mall Road, Amritsar, Punjab
+                                    143001</li>
+                                <li><i class="fas fa-phone"></i> +91 183 256 7890</li>
+                                <li><i class="fas fa-envelope"></i> info@punjabheritage.in</li>
+                                <li><i class="fas fa-clock"></i> Mon–Sat: 9AM – 6PM IST</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container footer-bottom-inner">
+                    <div class="footer-bottom-links">
+                        <a href="#">About Us</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                    <p class="footer-copy">© 2026 PUNJAB HERITAGE TOURS. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- end .main-content -->
+
+    <!-- DESTINATION MODAL -->
+    <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            <div class="modal-img-wrap">
+                <img src="" alt="" id="modalImg" class="modal-img" />
+            </div>
+            <div class="modal-body">
+                <span class="modal-category" id="modalCategory"></span>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <div class="modal-meta">
+                    <span id="modalLocation"><i class="fas fa-map-marker-alt"></i> </span>
+                    <span id="modalTimings"><i class="fas fa-clock"></i> </span>
+                    <span id="modalEntry"><i class="fas fa-ticket-alt"></i> </span>
+                </div>
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="modal-highlights" id="modalHighlights"></div>
+                <div class="modal-actions">
+                    <a href="#plan" class="btn btn-primary modal-plan-btn" id="modalPlanBtn"
+                        onclick="document.getElementById('modalOverlay').classList.remove('active')">
+                        <i class="fas fa-route"></i> Plan Visit
+                    </a>
+                    <button class="btn btn-outline" id="modalShareBtn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
